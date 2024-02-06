@@ -19,5 +19,6 @@ This line of code should be placed before `_paq.push(['trackPageView']);`.
 
 Don't forget to adapt `user.name@mail.com' with your own data
 
+(You can also use the request parameter `&gravatar_hash=XXXXXXXXX` to send hash directly from HTTP request).
 
 ### 3 - Enjoy user profil picture un the UserID report or Visit Summary profile
