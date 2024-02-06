@@ -1,0 +1,30 @@
+{
+    "name": "Profile Gravatar",
+    "description": "Add Gravatar to user profile",
+    "version": "5.0.0",
+    "theme": false,
+    "require": {
+        "matomo": ">=5.0.0,<6.0.0-b1"
+    },
+    "authors": [
+        {
+            "name": "Openmost",
+            "email": "ronan@openmost.io",
+            "homepage": "https:\/\/openmost.io"
+        }
+    ],
+    "support": {
+        "email": "ronan@openmost.io",
+        "issues": "https:\/\/github.com\/openmost\/ProfileGravatar\/issues",
+        "source": "https:\/\/github.com\/openmost\/ProfileGravatar"
+    },
+    "homepage": "https:\/\/openmost.io",
+    "license": "GPL v3+",
+    "keywords": [
+        "gravatar",
+        "avatar",
+        "profile",
+        "user",
+        "picture"
+    ]
+}
