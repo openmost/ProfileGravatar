@@ -6,9 +6,14 @@ use Piwik\Plugins\Live\VisitorDetailsAbstract;
 
 class VisitorDetails extends VisitorDetailsAbstract
 {
+    public function extendVisitorDetails(&$visitor){
+        $visitor['gravatar_hash'] = $this->details['gravatar_hash'];
+    }
+
+
     public function initProfile($visits, &$profile)
     {
-        $hash = $this->details['gravatar_hash'] ?? 'unknown';
+        $hash = $visits->getFirstRow()->getColumn('gravatar_hash') ?? 'unknown';
 
         $gravatarUrl = "https://gravatar.com/avatar/$hash.jpg";
         $gravatarUrl .= "?s=240";

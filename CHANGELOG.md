@@ -2,6 +2,11 @@
 
 ### v5.0.3
 
+Add extendVisitorDetails in VisitorDetails.php
+
+
+### v5.0.3
+
 Add archiver
 
 ### v5.0.1
