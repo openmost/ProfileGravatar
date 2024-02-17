@@ -2,6 +2,6 @@
 
 ## Description
 
-Replace the default user profile picture by Gravatar.
+Use gravatar image for visitor's profile picture
 
-This plugin use a SHA256 hash of the user email to retrive the picture.
+This plugin use a SHA256 hash of the user email to retrieve the picture.
