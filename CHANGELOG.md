@@ -1,5 +1,9 @@
 ## Changelog
 
+### v5.0.8
+
+Update screenshot
+
 ### v5.0.7
 
 Update documentation
