@@ -2,7 +2,7 @@
 
 ### 1 - Install the plugin from the marketplace or via GitHub and enable it
 
-Install this plugin from the Marketplace as super user or download the plugin and install it on your server from FTP in
+Install this plugin from the Marketplace as superuser or download the plugin and install it on your server from FTP in
 the `/plugins` folder.
 
 
@@ -11,14 +11,14 @@ the `/plugins` folder.
 This line of code should be placed before `_paq.push(['trackPageView']);`.
 
 
-```
+```javascript
   _paq.push(['ProfileGravatar.setGravatarHash', '<?php echo hash('sha256', 'user.name@mail.com'); ?>']);
 ```
 
 (This demo use PHP to hash user email)
 
-Don't forget to adapt `user.name@mail.com' with your own data
+Don't forget to adapt `user.name@mail.com` with your own data
 
 (You can also use the request parameter `&gravatar_hash=XXXXXXXXX` to send hash directly from HTTP request).
 
-### 3 - Enjoy user profil picture un the UserID report or Visit Summary profile
+**Enjoy user profile picture in the UserID report or Visit Summary**
