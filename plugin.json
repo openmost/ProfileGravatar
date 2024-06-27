@@ -1,7 +1,7 @@
 {
     "name": "ProfileGravatar",
     "description": "Use gravatar image for visitor's profile picture",
-    "version": "5.0.8",
+    "version": "5.0.9",
     "theme": false,
     "require": {
         "matomo": ">=5.0.0-stable,<6.0.0-b1"
@@ -27,5 +27,6 @@
         "user",
         "picture",
         "photo"
-    ]
+    ],
+    "categories": "integration"
 }
