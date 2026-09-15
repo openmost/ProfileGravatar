@@ -26,7 +26,7 @@ accepted, any other value is ignored by the plugin.
 
 No Custom HTML tag and no code are needed:
 
-1. Create a **Data-Layer** variable, for example `sha256_email_address`, reading the `sha256_email_address` key.
+1. Create a **Data-Layer** variable reading the key that contains the hash, for example `sha256_email_address` (or `user_data.sha256_email_address` if you use the Google enhanced conversions structure).
 2. Edit your **Matomo Configuration** variable and select this variable in the **Gravatar hash** field, right after the User ID field.
 3. Publish a new version of your container.
 
