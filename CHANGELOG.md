@@ -1,5 +1,9 @@
 ## Changelog
 
+### v6.0.1
+
+- Remove the `strict_types` declaration from the main plugin file, which the Marketplace syntax check rejects
+
 ### v6.0.0
 
 #### Matomo 6
