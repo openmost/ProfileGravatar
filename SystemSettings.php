@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Matomo - free/libre analytics platform
  *
@@ -6,64 +7,77 @@
  * @license http://www.gnu.org/licenses/gpl-3.0.html GPL v3 or later
  */
 
+declare(strict_types=1);
+
 namespace Piwik\Plugins\ProfileGravatar;
 
-use Piwik\Settings\Setting;
+use Piwik\Piwik;
 use Piwik\Settings\FieldConfig;
+use Piwik\Settings\Setting;
 use Piwik\Validators\NotEmpty;
+use Piwik\Validators\WhitelistedValue;
 
-/**
- * Defines Settings for ProfileGravatar.
- *
- * Usage like this:
- * $settings = new SystemSettings();
- * $settings->metric->getValue();
- * $settings->description->getValue();
- */
 class SystemSettings extends \Piwik\Settings\Plugin\SystemSettings
 {
     /** @var Setting */
     public $defaultImage;
+
+    /** @var Setting */
     public $rating;
+
+    /** @var Setting */
+    public $showInVisitsLog;
 
     protected function init()
     {
         $this->defaultImage = $this->createDefaultImageSetting();
         $this->rating = $this->createRatingSetting();
+        $this->showInVisitsLog = $this->createShowInVisitsLogSetting();
     }
 
-    private function createDefaultImageSetting()
+    private function createDefaultImageSetting(): Setting
     {
-        return $this->makeSetting('default_image', $default = 'mp', FieldConfig::TYPE_STRING, function (FieldConfig $field) {
-            $field->title = 'Default image';
+        return $this->makeSetting('default_image', 'mp', FieldConfig::TYPE_STRING, function (FieldConfig $field) {
+            $field->title = Piwik::translate('ProfileGravatar_DefaultImage');
             $field->uiControl = FieldConfig::UI_CONTROL_SINGLE_SELECT;
-            $field->availableValues = array(
-                'mp' => 'Mystery person',
+            $field->availableValues = [
+                'mp' => Piwik::translate('ProfileGravatar_DefaultImageMysteryPerson'),
                 'identicon' => 'Identicon',
-                'monsterid' => 'Monsterid',
+                'monsterid' => 'MonsterID',
                 'wavatar' => 'Wavatar',
                 'retro' => 'Retro',
-                'robohash' => 'Robohash',
-                'blank' => 'Blank',
-            );
-            $field->description = 'When you include a default image, Gravatar will automatically serve up that image if there is no image associated with the requested email hash.';
+                'robohash' => 'RoboHash',
+                'blank' => Piwik::translate('ProfileGravatar_DefaultImageBlank'),
+            ];
+            $field->description = Piwik::translate('ProfileGravatar_DefaultImageDescription');
             $field->validators[] = new NotEmpty();
+            $field->validators[] = new WhitelistedValue(array_keys($field->availableValues));
         });
     }
 
-    private function createRatingSetting()
+    private function createRatingSetting(): Setting
     {
-        return $this->makeSetting('rating', $default = 'g', FieldConfig::TYPE_STRING, function (FieldConfig $field) {
-            $field->title = 'Rating';
+        return $this->makeSetting('rating', 'g', FieldConfig::TYPE_STRING, function (FieldConfig $field) {
+            $field->title = Piwik::translate('ProfileGravatar_Rating');
             $field->uiControl = FieldConfig::UI_CONTROL_SINGLE_SELECT;
-            $field->availableValues = array(
+            $field->availableValues = [
                 'g' => 'G',
                 'pg' => 'PG',
                 'r' => 'R',
                 'x' => 'X',
-            );
-            $field->description = 'Gravatar allows users to self-rate their images so that they can indicate if an image is appropriate for a certain audience. By default, only G rated images are displayed unless you indicate that you would like to see higher ratings.';
+            ];
+            $field->description = Piwik::translate('ProfileGravatar_RatingDescription');
             $field->validators[] = new NotEmpty();
+            $field->validators[] = new WhitelistedValue(array_keys($field->availableValues));
+        });
+    }
+
+    private function createShowInVisitsLogSetting(): Setting
+    {
+        return $this->makeSetting('show_in_visits_log', true, FieldConfig::TYPE_BOOL, function (FieldConfig $field) {
+            $field->title = Piwik::translate('ProfileGravatar_ShowInVisitsLog');
+            $field->uiControl = FieldConfig::UI_CONTROL_CHECKBOX;
+            $field->description = Piwik::translate('ProfileGravatar_ShowInVisitsLogDescription');
         });
     }
 }

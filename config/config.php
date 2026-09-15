@@ -1,6 +1,6 @@
 <?php
 
-return array(
+return [
     \Piwik\View\SecurityPolicy::class => \Piwik\DI::decorate(function ($previous) {
         /** @var \Piwik\View\SecurityPolicy $previous */
 
@@ -8,7 +8,8 @@ return array(
             return $previous;
         }
 
-        $previous->addPolicy('img-src', 'gravatar.com');
+        // Avatars are loaded from Gravatar in the visitor profile and the visits log
+        $previous->addPolicy('img-src', 'https://gravatar.com');
         return $previous;
     }),
-);
+];
