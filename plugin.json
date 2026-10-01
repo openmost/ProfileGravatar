@@ -1,7 +1,7 @@
 {
     "name": "ProfileGravatar",
-    "description": "Use gravatar image for visitor's profile picture",
-    "version": "5.0.9",
+    "description": "Show the Gravatar picture of your identified visitors in the visitor profile.",
+    "version": "5.0.10",
     "theme": false,
     "require": {
         "matomo": ">=5.0.0-stable,<6.0.0-b1"
@@ -9,16 +9,16 @@
     "authors": [
         {
             "name": "Openmost",
-            "email": "ronan@openmost.io",
-            "homepage": "https:\/\/openmost.io"
+            "email": "ronan@openmost.com",
+            "homepage": "https://openmost.com"
         }
     ],
     "support": {
-        "email": "ronan@openmost.io",
-        "issues": "https:\/\/github.com\/openmost\/ProfileGravatar\/issues",
-        "source": "https:\/\/github.com\/openmost\/ProfileGravatar"
+        "email": "ronan@openmost.com",
+        "issues": "https://github.com/openmost/ProfileGravatar/issues",
+        "source": "https://github.com/openmost/ProfileGravatar"
     },
-    "homepage": "https://openmost.io/products/profile-gravatar/",
+    "homepage": "https://openmost.com/matomo/extensions/profile-gravatar",
     "license": "GPL v3+",
     "keywords": [
         "gravatar",
@@ -28,5 +28,5 @@
         "picture",
         "photo"
     ],
-    "categories": "integration"
+    "category": "integration"
 }
