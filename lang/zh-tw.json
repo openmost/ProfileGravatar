@@ -1,0 +1,28 @@
+{
+    "ProfileGravatar": {
+        "AvatarDescription": "Gravatar 個人資料圖片",
+        "DefaultImage": "預設圖片",
+        "DefaultImageBlank": "空白（透明）",
+        "DefaultImageDescription": "當雜湊沒有對應的個人資料圖片時，Gravatar 顯示的圖片。",
+        "DefaultImageMysteryPerson": "神秘人物",
+        "GravatarHash": "Gravatar 雜湊",
+        "GravatarHashSegmentHelp": "訪客電子郵件地址的 SHA256（或 MD5）雜湊",
+        "Rating": "最高分級",
+        "RatingDescription": "Gravatar 使用者會自行為圖片分級。分級高於此等級的圖片會以預設圖片取代。G 級適合所有觀眾。",
+        "ShowInVisitsLog": "在訪問記錄中顯示 Gravatar 圖片",
+        "ShowInVisitsLogDescription": "對於具有已知 Gravatar 雜湊的訪問，在訪客詳細資料旁顯示小型個人資料圖片。",
+        "TagManagerGravatarHashTitle": "Gravatar 雜湊",
+        "TagManagerGravatarHashDescription": "訪客電子郵件地址的 SHA256 雜湊，由你的網站提供（例如 {{sha256_email_address}} 這類 Data-Layer 變數）。切勿直接使用電子郵件地址。在 Matomo 中顯示訪客的 Gravatar 圖片（ProfileGravatar 外掛）。"
+    },
+    "OpenmostCommunication": {
+        "Dismiss": "關閉",
+        "WidgetName": "Openmost：AI 聊天機器人追蹤設定",
+        "AIChatbotsTitle": "需要協助設定 AI 聊天機器人追蹤嗎？",
+        "AIChatbotsBody": "作為 Matomo 官方 Implementation Partner，Openmost 可以替你設定 AI 聊天機器人追蹤，適用於 Matomo On-Premise 或 Cloud。",
+        "AIChatbotsCta": "請人幫我設定",
+        "TrackingPlanTitle": "事件需要手動設定",
+        "TrackingPlanBody": "事件可以衡量點擊、下載、表單送出或影片播放，前提是已完成追蹤設定。作為 Matomo 官方 Implementation Partner，Openmost 為你的網站設計並實作合適的追蹤計畫。",
+        "TrackingPlanCta": "建立我的追蹤計畫",
+        "EventsEnhancedLink": "使用 Events Enhanced 充分運用你的事件資料"
+    }
+}

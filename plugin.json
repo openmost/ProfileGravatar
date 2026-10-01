@@ -1,7 +1,7 @@
 {
     "name": "ProfileGravatar",
-    "description": "Display the Gravatar profile picture of your identified visitors in the visitor profile and the visits log",
-    "version": "6.0.1",
+    "description": "Show the Gravatar picture of your identified visitors in the visitor profile and the visits log.",
+    "version": "6.0.2",
     "theme": false,
     "require": {
         "matomo": ">=6.0.0-b1,<7.0.0-b1",
@@ -11,15 +11,15 @@
         {
             "name": "Openmost",
             "email": "ronan@openmost.com",
-            "homepage": "https:\/\/openmost.com"
+            "homepage": "https://openmost.com"
         }
     ],
     "support": {
         "email": "ronan@openmost.com",
-        "issues": "https:\/\/github.com\/openmost\/ProfileGravatar\/issues",
-        "source": "https:\/\/github.com\/openmost\/ProfileGravatar"
+        "issues": "https://github.com/openmost/ProfileGravatar/issues",
+        "source": "https://github.com/openmost/ProfileGravatar"
     },
-    "homepage": "https:\/\/openmost.com\/matomo\/extensions\/profile-gravatar",
+    "homepage": "https://openmost.com/matomo/extensions/profile-gravatar",
     "license": "GPL v3+",
     "keywords": [
         "gravatar",
@@ -28,8 +28,8 @@
         "user",
         "picture",
         "photo",
-        "visitor profile",
-        "visits log"
+        "visitor-profile",
+        "visits-log"
     ],
-    "categories": "integration"
+    "category": "integration"
 }

@@ -1,0 +1,28 @@
+{
+    "ProfileGravatar": {
+        "AvatarDescription": "Immagine del profilo Gravatar",
+        "DefaultImage": "Immagine predefinita",
+        "DefaultImageBlank": "Vuota (trasparente)",
+        "DefaultImageDescription": "Immagine mostrata da Gravatar quando nessuna immagine del profilo è associata all'hash.",
+        "DefaultImageMysteryPerson": "Persona misteriosa",
+        "GravatarHash": "Hash Gravatar",
+        "GravatarHashSegmentHelp": "Hash SHA256 (o MD5) dell'indirizzo email del visitatore",
+        "Rating": "Classificazione massima",
+        "RatingDescription": "Gli utenti Gravatar classificano autonomamente le proprie immagini. Le immagini classificate sopra questo livello vengono sostituite dall'immagine predefinita. G è adatto a tutti i pubblici.",
+        "ShowInVisitsLog": "Mostra l'immagine Gravatar nel log delle visite",
+        "ShowInVisitsLogDescription": "Mostra una piccola immagine del profilo accanto ai dettagli del visitatore per le visite con un hash Gravatar noto.",
+        "TagManagerGravatarHashTitle": "Hash Gravatar",
+        "TagManagerGravatarHashDescription": "Hash SHA256 dell'indirizzo email del visitatore, fornito dal tuo sito web (ad esempio una variabile Data-Layer come {{sha256_email_address}}). Non usare mai l'indirizzo email stesso. Mostra l'immagine Gravatar del visitatore in Matomo (plugin ProfileGravatar)."
+    },
+    "OpenmostCommunication": {
+        "Dismiss": "Ignora",
+        "WidgetName": "Openmost: configurazione del tracciamento dei chatbot IA",
+        "AIChatbotsTitle": "Serve aiuto per configurare il tracciamento dei chatbot IA?",
+        "AIChatbotsBody": "In qualità di Implementation Partner ufficiale di Matomo, Openmost può configurare il tracciamento dei chatbot IA per voi, su Matomo On-Premise o Cloud.",
+        "AIChatbotsCta": "Richiedi la configurazione",
+        "TrackingPlanTitle": "Gli eventi devono essere configurati manualmente",
+        "TrackingPlanBody": "Gli eventi misurano clic, download, invii di moduli o riproduzioni video, se vengono tracciati. In qualità di Implementation Partner ufficiale di Matomo, Openmost progetta e implementa un piano di tracciamento adatto al vostro sito.",
+        "TrackingPlanCta": "Creare il mio piano di tracciamento",
+        "EventsEnhancedLink": "Ottenete di più dai vostri eventi con Events Enhanced"
+    }
+}

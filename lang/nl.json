@@ -1,0 +1,28 @@
+{
+    "ProfileGravatar": {
+        "AvatarDescription": "Gravatar-profielfoto",
+        "DefaultImage": "Standaardafbeelding",
+        "DefaultImageBlank": "Leeg (transparant)",
+        "DefaultImageDescription": "Afbeelding die Gravatar toont als er geen profielfoto aan de hash is gekoppeld.",
+        "DefaultImageMysteryPerson": "Mysterieus persoon",
+        "GravatarHash": "Gravatar-hash",
+        "GravatarHashSegmentHelp": "SHA256- (of MD5-)hash van het e-mailadres van de bezoeker",
+        "Rating": "Maximale classificatie",
+        "RatingDescription": "Gravatar-gebruikers classificeren hun foto's zelf. Foto's met een hogere classificatie dan dit niveau worden vervangen door de standaardafbeelding. G is geschikt voor alle doelgroepen.",
+        "ShowInVisitsLog": "De Gravatar-foto tonen in het bezoekerslogboek",
+        "ShowInVisitsLogDescription": "Toont een kleine profielfoto naast de bezoekersgegevens voor bezoeken met een bekende Gravatar-hash.",
+        "TagManagerGravatarHashTitle": "Gravatar-hash",
+        "TagManagerGravatarHashDescription": "SHA256-hash van het e-mailadres van de bezoeker, aangeleverd door uw website (bijvoorbeeld een data layer-variabele zoals {{sha256_email_address}}). Gebruik nooit het e-mailadres zelf. Toont de Gravatar-foto van de bezoeker in Matomo (plugin ProfileGravatar)."
+    },
+    "OpenmostCommunication": {
+        "Dismiss": "Sluiten",
+        "WidgetName": "Openmost: instellen van AI-chatbottracking",
+        "AIChatbotsTitle": "Hulp nodig bij het instellen van AI-chatbottracking?",
+        "AIChatbotsBody": "Als officieel Matomo Implementation Partner kan Openmost AI-chatbottracking voor u instellen, op Matomo On-Premise of Cloud.",
+        "AIChatbotsCta": "Laat het voor mij instellen",
+        "TrackingPlanTitle": "Gebeurtenissen moeten handmatig worden ingesteld",
+        "TrackingPlanBody": "Gebeurtenissen meten klikken, downloads, formulierverzendingen of videoweergaven, zodra ze worden gemeten. Als officieel Matomo Implementation Partner ontwerpt en implementeert Openmost een trackingplan dat bij uw site past.",
+        "TrackingPlanCta": "Mijn trackingplan opstellen",
+        "EventsEnhancedLink": "Haal meer uit uw gebeurtenissen met Events Enhanced"
+    }
+}

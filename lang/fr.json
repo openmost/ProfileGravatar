@@ -13,5 +13,16 @@
         "ShowInVisitsLogDescription": "Affiche une petite photo de profil à côté des détails du visiteur pour les visites dont le hash Gravatar est connu.",
         "TagManagerGravatarHashTitle": "Hash Gravatar",
         "TagManagerGravatarHashDescription": "Hash SHA256 de l'adresse email du visiteur, fourni par votre site (par exemple une variable Data-Layer comme {{sha256_email_address}}). N'utilisez jamais l'adresse email elle-même. Affiche la photo Gravatar du visiteur dans Matomo (plugin ProfileGravatar)."
+    },
+    "OpenmostCommunication": {
+        "Dismiss": "Masquer",
+        "WidgetName": "Openmost : configuration du suivi des chatbots IA",
+        "AIChatbotsTitle": "Besoin d'aide pour configurer le suivi des chatbots IA ?",
+        "AIChatbotsBody": "Implementation Partner officiel de Matomo, Openmost peut configurer le suivi des chatbots IA pour vous, sur Matomo On-Premise ou Cloud.",
+        "AIChatbotsCta": "Faire configurer le suivi",
+        "TrackingPlanTitle": "Les événements doivent être configurés manuellement",
+        "TrackingPlanBody": "Les événements mesurent les clics, téléchargements, envois de formulaires ou lectures vidéo, à condition d'être suivis. Implementation Partner officiel de Matomo, Openmost conçoit et met en place un plan de marquage adapté à votre site.",
+        "TrackingPlanCta": "Construire mon plan de marquage",
+        "EventsEnhancedLink": "Tirez davantage de vos événements avec Events Enhanced"
     }
 }

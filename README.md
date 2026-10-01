@@ -1,31 +1,45 @@
-# Profile Gravatar Plugin
+# Profile Gravatar
 
-## Description
+Display the Gravatar profile picture of your identified visitors in the visitor profile and the visits log.
 
-Display the Gravatar profile picture of your identified visitors in Matomo.
+## Features
 
-Send the SHA256 hash of the visitor email address (for example `sha256_email_address` from your data layer) with your tracking requests and Matomo shows the matching [Gravatar](https://gravatar.com) picture:
-
-- in the **visitor profile**, instead of the anonymous avatar,
-- in the **visits log**, next to the visitor details (can be disabled),
-- in the **Live API** (`gravatar_hash` and `gravatarUrl` in `Live.getLastVisitsDetails`).
-
-With Matomo Tag Manager, select your Data-Layer variable in the new **Gravatar hash** field of the Matomo Configuration variable (right after User ID): no Custom HTML tag or code needed. You can also use `_paq.push(['ProfileGravatar.setGravatarHash', hash])`, the Tracking HTTP API or the PHP Tracker.
-
-The plugin never needs the email address: only its SHA256 (or MD5) hash is tracked, in a dedicated visit dimension that you can also use as a segment (`gravatarHash`).
-
-In the system settings you can choose the default image displayed when a visitor has no Gravatar, and the maximum rating of the pictures.
-
-__Thank you for installing !__
+- **Visitor profile picture**: when a visit carries the SHA256 hash of the visitor email address, the visitor profile shows the matching [Gravatar](https://gravatar.com) picture instead of the anonymous avatar. The most recent visit with a hash is used.
+- **Visits log**: a small profile picture next to the visitor details (can be turned off).
+- **Matomo Tag Manager field**: a **Gravatar hash** field is added to the Matomo Configuration variable, right after User ID. Select a Data-Layer variable (for example `sha256_email_address`), no Custom HTML tag or code needed.
+- **Other ways to send the hash**: `_paq.push(['ProfileGravatar.setGravatarHash', hash])` (and `resetGravatarHash` on logout) with the JavaScript tracker, the `gravatar_hash` parameter of the Tracking HTTP API, or the PHP Tracker. The hash is attached to every tracking request, so it can be set after the page view.
+- **Segment and API**: the hash is stored in a dedicated visit dimension, usable as the `gravatarHash` segment. `Live.getLastVisitsDetails` returns `gravatar_hash` and `gravatarUrl`.
+- **Settings**: default image when a visitor has no Gravatar (mystery person, identicon, MonsterID, Wavatar, Retro, RoboHash, blank) and maximum picture rating (G, PG, R, X).
+- Only valid SHA256 or MD5 hashes are tracked, any other value is ignored.
 
 ## Requirements
 
-- Matomo 6.x
+- Matomo 6 (`>=6.0.0-b1,<7.0.0-b1`)
 - PHP 8.1 or higher
-- MySQL 8.0+ or MariaDB 10.6+
+- Matomo Tag Manager is optional, it is only needed for the Gravatar hash field.
 
-## Want more ?
+## Installation / Configuration
 
-Find the documentation and the other Openmost plugins on https://openmost.com/matomo/extensions/profile-gravatar
+1. Install and activate the plugin from *Administration > Platform > Marketplace*.
+2. Send the hash from your website, with Tag Manager or the tracker (see [docs/index.md](docs/index.md)).
+3. Optionally adjust the default image, the rating and the visits log display in *Administration > System > General settings > ProfileGravatar*.
 
-If you want to have your own plugin or want to develop a plugin for your customers, please contact me using my email in the marketplace official page or go to https://openmost.com
+## Privacy and data
+
+- The plugin never needs the email address: only its SHA256 (or MD5) hash is tracked and stored in Matomo, like any other visit dimension.
+- Pictures are loaded over HTTPS from gravatar.com by the browser of the Matomo users viewing the reports. Visitors themselves never contact Gravatar because of this plugin.
+- A hash of an email address is still personal data under the GDPR: send it only for visitors who agreed to it, and include it in your data retention and deletion processes.
+
+## Need help with Matomo?
+
+Openmost is an official Matomo Implementation Partner. We design [Matomo tracking plans](https://openmost.com/matomo/services/tracking-architecture?utm_source=matomo_marketplace&utm_medium=referral&utm_campaign=services&utm_content=profilegravatar), including User ID and cross-device identification where your legal basis allows it, and implement them so your team can maintain them.
+
+## Support
+
+- Homepage: https://openmost.com/matomo/extensions/profile-gravatar
+- Issues: https://github.com/openmost/ProfileGravatar/issues
+- Email: ronan@openmost.com
+
+## Screenshots
+
+See the `screenshots/` folder, or the plugin page on the Matomo Marketplace.

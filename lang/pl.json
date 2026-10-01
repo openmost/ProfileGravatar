@@ -1,0 +1,28 @@
+{
+    "ProfileGravatar": {
+        "AvatarDescription": "Zdjęcie profilowe Gravatar",
+        "DefaultImage": "Obraz domyślny",
+        "DefaultImageBlank": "Pusty (przezroczysty)",
+        "DefaultImageDescription": "Obraz wyświetlany przez Gravatar, gdy z hashem nie jest powiązane żadne zdjęcie profilowe.",
+        "DefaultImageMysteryPerson": "Tajemnicza postać",
+        "GravatarHash": "Hash Gravatar",
+        "GravatarHashSegmentHelp": "Hash SHA256 (lub MD5) adresu e-mail odwiedzającego",
+        "Rating": "Maksymalna kategoria",
+        "RatingDescription": "Użytkownicy Gravatar sami klasyfikują swoje zdjęcia. Zdjęcia sklasyfikowane powyżej tego poziomu są zastępowane obrazem domyślnym. G jest odpowiednie dla wszystkich odbiorców.",
+        "ShowInVisitsLog": "Pokazuj zdjęcie Gravatar w dzienniku wizyt",
+        "ShowInVisitsLogDescription": "Wyświetla małe zdjęcie profilowe obok szczegółów odwiedzającego dla wizyt ze znanym hashem Gravatar.",
+        "TagManagerGravatarHashTitle": "Hash Gravatar",
+        "TagManagerGravatarHashDescription": "Hash SHA256 adresu e-mail odwiedzającego, dostarczany przez Twoją stronę (na przykład zmienna Data-Layer, taka jak {{sha256_email_address}}). Nigdy nie używaj samego adresu e-mail. Wyświetla zdjęcie Gravatar odwiedzającego w Matomo (wtyczka ProfileGravatar)."
+    },
+    "OpenmostCommunication": {
+        "Dismiss": "Odrzuć",
+        "WidgetName": "Openmost: konfiguracja śledzenia chatbotów AI",
+        "AIChatbotsTitle": "Potrzebujesz pomocy w konfiguracji śledzenia chatbotów AI?",
+        "AIChatbotsBody": "Jako oficjalny partner Matomo (Implementation Partner) Openmost może skonfigurować śledzenie chatbotów AI za Ciebie, w Matomo On-Premise lub Cloud.",
+        "AIChatbotsCta": "Zleć konfigurację",
+        "TrackingPlanTitle": "Zdarzenia trzeba skonfigurować ręcznie",
+        "TrackingPlanBody": "Zdarzenia mierzą kliknięcia, pobrania, wysłane formularze czy odtworzenia wideo, pod warunkiem że są śledzone. Jako oficjalny partner Matomo (Implementation Partner) Openmost projektuje i wdraża plan śledzenia dopasowany do Twojej strony.",
+        "TrackingPlanCta": "Stwórz mój plan śledzenia",
+        "EventsEnhancedLink": "Wyciśnij więcej ze swoich zdarzeń dzięki Events Enhanced"
+    }
+}

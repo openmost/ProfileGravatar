@@ -1,5 +1,10 @@
 ## Changelog
 
+### v6.0.2
+
+- Plugin translated into 12 languages (Arabic, Chinese simplified and traditional, Dutch, English, French, German, Italian, Japanese, Polish, Portuguese, Spanish).
+- Shorter Marketplace description that fits the plugin cards, and campaign parameters on the Openmost links of the README.
+
 ### v6.0.1
 
 - Remove the `strict_types` declaration from the main plugin file, which the Marketplace syntax check rejects

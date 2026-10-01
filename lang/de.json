@@ -1,0 +1,28 @@
+{
+    "ProfileGravatar": {
+        "AvatarDescription": "Gravatar-Profilbild",
+        "DefaultImage": "Standardbild",
+        "DefaultImageBlank": "Leer (transparent)",
+        "DefaultImageDescription": "Bild, das Gravatar anzeigt, wenn dem Hash kein Profilbild zugeordnet ist.",
+        "DefaultImageMysteryPerson": "Unbekannte Person",
+        "GravatarHash": "Gravatar-Hash",
+        "GravatarHashSegmentHelp": "SHA256- (oder MD5-)Hash der E-Mail-Adresse des Besuchers",
+        "Rating": "Maximale Einstufung",
+        "RatingDescription": "Gravatar-Nutzer stufen ihre Bilder selbst ein. Bilder mit einer höheren Einstufung werden durch das Standardbild ersetzt. G ist für alle Zielgruppen geeignet.",
+        "ShowInVisitsLog": "Gravatar-Bild im Besucher-Protokoll anzeigen",
+        "ShowInVisitsLogDescription": "Zeigt bei Besuchen mit bekanntem Gravatar-Hash ein kleines Profilbild neben den Besucherdetails an.",
+        "TagManagerGravatarHashTitle": "Gravatar-Hash",
+        "TagManagerGravatarHashDescription": "SHA256-Hash der E-Mail-Adresse des Besuchers, bereitgestellt von Ihrer Webseite (zum Beispiel über eine Data-Layer-Variable wie {{sha256_email_address}}). Verwenden Sie niemals die E-Mail-Adresse selbst. Zeigt das Gravatar-Bild des Besuchers in Matomo an (Plugin ProfileGravatar)."
+    },
+    "OpenmostCommunication": {
+        "Dismiss": "Ausblenden",
+        "WidgetName": "Openmost: Einrichtung des KI-Chatbot-Trackings",
+        "AIChatbotsTitle": "Brauchen Sie Hilfe beim Einrichten des KI-Chatbot-Trackings?",
+        "AIChatbotsBody": "Als offizieller Matomo Implementation Partner richtet Openmost das KI-Chatbot-Tracking für Sie ein, auf Matomo On-Premise oder Cloud.",
+        "AIChatbotsCta": "Tracking einrichten lassen",
+        "TrackingPlanTitle": "Ereignisse müssen manuell eingerichtet werden",
+        "TrackingPlanBody": "Ereignisse messen Klicks, Downloads, Formularübermittlungen oder Videowiedergaben, sobald sie erfasst werden. Als offizieller Matomo Implementation Partner konzipiert und setzt Openmost einen Tracking-Plan um, der zu Ihrer Website passt.",
+        "TrackingPlanCta": "Meinen Tracking-Plan erstellen",
+        "EventsEnhancedLink": "Holen Sie mit Events Enhanced mehr aus Ihren Ereignissen heraus"
+    }
+}

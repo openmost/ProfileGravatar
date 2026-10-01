@@ -1,0 +1,28 @@
+{
+    "ProfileGravatar": {
+        "AvatarDescription": "صورة ملف Gravatar الشخصي",
+        "DefaultImage": "الصورة الافتراضية",
+        "DefaultImageBlank": "فارغة (شفافة)",
+        "DefaultImageDescription": "الصورة التي يعرضها Gravatar عندما لا تكون هناك صورة ملف شخصي مرتبطة بالبصمة.",
+        "DefaultImageMysteryPerson": "شخص مجهول",
+        "GravatarHash": "بصمة Gravatar",
+        "GravatarHashSegmentHelp": "بصمة SHA256 (أو MD5) لعنوان البريد الإلكتروني للزائر",
+        "Rating": "التصنيف الأقصى",
+        "RatingDescription": "يصنّف مستخدمو Gravatar صورهم بأنفسهم. تُستبدل الصور المصنّفة فوق هذا المستوى بالصورة الافتراضية. التصنيف G مناسب لجميع الفئات.",
+        "ShowInVisitsLog": "عرض صورة Gravatar في سجل الزيارات",
+        "ShowInVisitsLogDescription": "يعرض صورة ملف شخصي صغيرة بجانب تفاصيل الزائر للزيارات ذات بصمة Gravatar معروفة.",
+        "TagManagerGravatarHashTitle": "بصمة Gravatar",
+        "TagManagerGravatarHashDescription": "بصمة SHA256 لعنوان البريد الإلكتروني للزائر، يوفّرها موقعك (مثل متغير Data-Layer كـ {{sha256_email_address}}). لا تستخدم عنوان البريد الإلكتروني نفسه أبدًا. تعرض صورة Gravatar للزائر في Matomo (تطبيق ProfileGravatar)."
+    },
+    "OpenmostCommunication": {
+        "Dismiss": "تجاهل",
+        "WidgetName": "Openmost: إعداد تتبع روبوتات الدردشة بالذكاء الاصطناعي",
+        "AIChatbotsTitle": "هل تحتاج إلى مساعدة في إعداد تتبع روبوتات الدردشة بالذكاء الاصطناعي؟",
+        "AIChatbotsBody": "بصفتها شريك تنفيذ رسمياً لـ Matomo (Implementation Partner)، يمكن لـ Openmost إعداد تتبع روبوتات الدردشة بالذكاء الاصطناعي نيابةً عنك، على Matomo On-Premise أو Cloud.",
+        "AIChatbotsCta": "اطلب إعداده لي",
+        "TrackingPlanTitle": "يجب إعداد الأحداث يدوياً",
+        "TrackingPlanBody": "تقيس الأحداث النقرات والتنزيلات وإرسال النماذج وتشغيل الفيديو، بشرط أن يتم تتبعها. بصفتها شريك تنفيذ رسمياً لـ Matomo (Implementation Partner)، تصمم Openmost خطة تتبع مناسبة لموقعك وتنفذها.",
+        "TrackingPlanCta": "أنشئ خطة التتبع الخاصة بي",
+        "EventsEnhancedLink": "استفد أكثر من أحداثك مع Events Enhanced"
+    }
+}
