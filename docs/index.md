@@ -5,7 +5,7 @@
 Install this plugin from the Marketplace as superuser or download the plugin and install it on your server from FTP in
 the `/plugins` folder, then activate it.
 
-Requirements: Matomo 5.x.
+Requirements: Matomo 5.10.0 or later.
 
 ### 2 - Provide the hash of the visitor email address
 

@@ -11,7 +11,7 @@ Display the Gravatar profile picture of your identified visitors in the visitor 
 
 ## Requirements
 
-- Matomo 5 (`>=5.0.0-stable,<6.0.0-b1`)
+- Matomo 5.10.0 or later (`>=5.10.0,<6.0.0-b1`)
 
 ## Installation / Configuration
 
