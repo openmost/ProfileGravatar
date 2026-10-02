@@ -11,7 +11,7 @@ This plugin is available in the official marketplace of Matomo. You have to inst
 
 __Which versions of Matomo are supported ?__
 
-Version 5.x of the plugin supports Matomo 5.10.0 or later. Use version 6.x of the plugin for Matomo 6.
+Version 5.x of the plugin supports Matomo 5.0.0 or later. Use version 6.x of the plugin for Matomo 6.
 
 __Does the plugin need the email address of my visitors ?__
 
