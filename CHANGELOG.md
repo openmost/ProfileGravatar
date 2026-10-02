@@ -5,7 +5,7 @@
 - Plugin translated into 12 languages (Arabic, Chinese simplified and traditional, Dutch, English, French, German, Italian, Japanese, Polish, Portuguese, Spanish).
 - Plugin homepage moved to https://openmost.com/matomo/extensions/profile-gravatar, support on openmost.com.
 - Shorter Marketplace description that fits the plugin cards, and campaign parameters on the Openmost links of the README.
-- Requires Matomo 5.0.0 or later (`>=5.0.0,<6.0.0-b1`): the Openmost banner styles fall back to the Matomo light theme colors when the theme color variables of Matomo 5.10.0 are not available.
+- Requires Matomo 5.0.0 or later (`>=5.0.0,<6.0.0-b1`).
 
 ### v5.0.9
 
