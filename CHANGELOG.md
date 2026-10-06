@@ -6,6 +6,7 @@
 - Plugin homepage moved to https://openmost.com/matomo/extensions/profile-gravatar, support on openmost.com.
 - Shorter Marketplace description that fits the plugin cards, and campaign parameters on the Openmost links of the README.
 - Requires Matomo 5.0.0 or later (`>=5.0.0,<6.0.0-b1`).
+- README: the plugin description now shows in the Description tab of the Matomo Marketplace.
 
 ### v5.0.9
 
