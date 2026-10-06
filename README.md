@@ -1,8 +1,10 @@
 # Profile Gravatar
 
+## Description
+
 Display the Gravatar profile picture of your identified visitors in the visitor profile and the visits log.
 
-## Features
+### Features
 
 - **Visitor profile picture**: when a visit carries the SHA256 hash of the visitor email address, the visitor profile shows the matching [Gravatar](https://gravatar.com) picture instead of the anonymous avatar. The most recent visit with a hash is used.
 - **Visits log**: a small profile picture next to the visitor details (can be turned off).
@@ -12,25 +14,25 @@ Display the Gravatar profile picture of your identified visitors in the visitor 
 - **Settings**: default image when a visitor has no Gravatar (mystery person, identicon, MonsterID, Wavatar, Retro, RoboHash, blank) and maximum picture rating (G, PG, R, X).
 - Only valid SHA256 or MD5 hashes are tracked, any other value is ignored.
 
-## Requirements
+### Requirements
 
 - Matomo 6 (`>=6.0.0-b1,<7.0.0-b1`)
 - PHP 8.1 or higher
 - Matomo Tag Manager is optional, it is only needed for the Gravatar hash field.
 
-## Installation / Configuration
+### Installation / Configuration
 
 1. Install and activate the plugin from *Administration > Platform > Marketplace*.
 2. Send the hash from your website, with Tag Manager or the tracker (see [docs/index.md](docs/index.md)).
 3. Optionally adjust the default image, the rating and the visits log display in *Administration > System > General settings > ProfileGravatar*.
 
-## Privacy and data
+### Privacy and data
 
 - The plugin never needs the email address: only its SHA256 (or MD5) hash is tracked and stored in Matomo, like any other visit dimension.
 - Pictures are loaded over HTTPS from gravatar.com by the browser of the Matomo users viewing the reports. Visitors themselves never contact Gravatar because of this plugin.
 - A hash of an email address is still personal data under the GDPR: send it only for visitors who agreed to it, and include it in your data retention and deletion processes.
 
-## Need help with Matomo?
+### Need help with Matomo?
 
 Openmost is an official Matomo Implementation Partner. We design [Matomo tracking plans](https://openmost.com/matomo/services/tracking-architecture?utm_source=matomo_marketplace&utm_medium=referral&utm_campaign=services&utm_content=profilegravatar), including User ID and cross-device identification where your legal basis allows it, and implement them so your team can maintain them.
 
