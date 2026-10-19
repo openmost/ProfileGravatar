@@ -75,7 +75,7 @@ class GravatarHash extends VisitDimension
      */
     public function onNewVisit(Request $request, Visitor $visitor, $action)
     {
-        $paramValue = Common::getRequestVar('gravatar_hash', '', 'string', $request->getParams());
+        $paramValue = $this->getHashFromRequest($request);
         if (!empty($paramValue)) {
             return $paramValue;
         }
@@ -85,10 +85,6 @@ class GravatarHash extends VisitDimension
         }
 
         return null;
-
-        // you could also easily save any custom tracking url parameters
-        // return Common::getRequestVar('myCustomTrackingParam', 'default', 'string', $request->getParams());
-        // return Common::getRequestVar('linuxversion', false, 'string', $request->getParams());
     }
 
     /**
@@ -104,7 +100,7 @@ class GravatarHash extends VisitDimension
      */
     public function onExistingVisit(Request $request, Visitor $visitor, $action)
     {
-        $paramValue = Common::getRequestVar('gravatar_hash', '', 'string', $request->getParams());
+        $paramValue = $this->getHashFromRequest($request);
         if (!empty($paramValue)) {
             return $paramValue;
         }
@@ -114,6 +110,16 @@ class GravatarHash extends VisitDimension
         }
 
         return false;
+    }
+
+    /**
+     * HTML-escaped, as Matomo stores tracking parameters: the hash reaches the visitor profile avatar URL.
+     */
+    private function getHashFromRequest(Request $request): string
+    {
+        $parameters = new \Piwik\Request($request->getParams());
+
+        return Common::sanitizeInputValues($parameters->getStringParameter('gravatar_hash', ''));
     }
 
     /**
