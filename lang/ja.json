@@ -1,6 +1,18 @@
 {
     "ProfileGravatar": {
-        "GravatarHash": "GravatarHash"
+        "AvatarDescription": "Gravatar のプロフィール画像",
+        "DefaultImage": "デフォルト画像",
+        "DefaultImageBlank": "空白（透明）",
+        "DefaultImageDescription": "ハッシュに関連付けられたプロフィール画像がない場合に Gravatar が表示する画像です。",
+        "DefaultImageMysteryPerson": "ミステリーパーソン",
+        "GravatarHash": "Gravatar ハッシュ",
+        "GravatarHashSegmentHelp": "ビジターのメールアドレスの SHA256（または MD5）ハッシュ",
+        "Rating": "最大レーティング",
+        "RatingDescription": "Gravatar のユーザーは自分の画像にレーティングを付けます。このレベルを超えるレーティングの画像はデフォルト画像に置き換えられます。G はすべての利用者に適しています。",
+        "ShowInVisitsLog": "ビジットログに Gravatar の画像を表示",
+        "ShowInVisitsLogDescription": "Gravatar ハッシュが判明しているビジットについて、ビジターの詳細の横に小さなプロフィール画像を表示します。",
+        "TagManagerGravatarHashTitle": "Gravatar ハッシュ",
+        "TagManagerGravatarHashDescription": "ウェブサイトから提供されるビジターのメールアドレスの SHA256 ハッシュです（例: {{sha256_email_address}} のようなデータレイヤー変数）。メールアドレスそのものは絶対に使用しないでください。Matomo でビジターの Gravatar 画像を表示します（ProfileGravatar プラグイン）。"
     },
     "OpenmostCommunication": {
         "Dismiss": "閉じる",

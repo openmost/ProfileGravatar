@@ -1,6 +1,18 @@
 {
     "ProfileGravatar": {
-        "GravatarHash": "GravatarHash"
+        "AvatarDescription": "صورة ملف Gravatar الشخصي",
+        "DefaultImage": "الصورة الافتراضية",
+        "DefaultImageBlank": "فارغة (شفافة)",
+        "DefaultImageDescription": "الصورة التي يعرضها Gravatar عندما لا تكون هناك صورة ملف شخصي مرتبطة بالبصمة.",
+        "DefaultImageMysteryPerson": "شخص مجهول",
+        "GravatarHash": "بصمة Gravatar",
+        "GravatarHashSegmentHelp": "بصمة SHA256 (أو MD5) لعنوان البريد الإلكتروني للزائر",
+        "Rating": "التصنيف الأقصى",
+        "RatingDescription": "يصنّف مستخدمو Gravatar صورهم بأنفسهم. تُستبدل الصور المصنّفة فوق هذا المستوى بالصورة الافتراضية. التصنيف G مناسب لجميع الفئات.",
+        "ShowInVisitsLog": "عرض صورة Gravatar في سجل الزيارات",
+        "ShowInVisitsLogDescription": "يعرض صورة ملف شخصي صغيرة بجانب تفاصيل الزائر للزيارات ذات بصمة Gravatar معروفة.",
+        "TagManagerGravatarHashTitle": "بصمة Gravatar",
+        "TagManagerGravatarHashDescription": "بصمة SHA256 لعنوان البريد الإلكتروني للزائر، يوفّرها موقعك (مثل متغير Data-Layer كـ {{sha256_email_address}}). لا تستخدم عنوان البريد الإلكتروني نفسه أبدًا. تعرض صورة Gravatar للزائر في Matomo (تطبيق ProfileGravatar)."
     },
     "OpenmostCommunication": {
         "Dismiss": "تجاهل",

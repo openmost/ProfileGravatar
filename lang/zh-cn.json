@@ -1,6 +1,18 @@
 {
     "ProfileGravatar": {
-        "GravatarHash": "GravatarHash"
+        "AvatarDescription": "Gravatar 头像",
+        "DefaultImage": "默认图片",
+        "DefaultImageBlank": "空白（透明）",
+        "DefaultImageDescription": "当哈希值没有关联头像时，Gravatar 显示的图片。",
+        "DefaultImageMysteryPerson": "神秘人",
+        "GravatarHash": "Gravatar 哈希",
+        "GravatarHashSegmentHelp": "访客邮箱地址的 SHA256（或 MD5）哈希值",
+        "Rating": "最高分级",
+        "RatingDescription": "Gravatar 用户会自行为头像分级。分级高于此级别的头像将被替换为默认图片。G 级适合所有受众。",
+        "ShowInVisitsLog": "在访问日志中显示 Gravatar 头像",
+        "ShowInVisitsLogDescription": "对于具有已知 Gravatar 哈希的访问，在访客详情旁显示一个小头像。",
+        "TagManagerGravatarHashTitle": "Gravatar 哈希",
+        "TagManagerGravatarHashDescription": "访客邮箱地址的 SHA256 哈希值，由您的网站提供（例如 {{sha256_email_address}} 这样的数据层变量）。切勿直接使用邮箱地址。在 Matomo 中显示访客的 Gravatar 头像（ProfileGravatar 插件）。"
     },
     "OpenmostCommunication": {
         "Dismiss": "关闭",

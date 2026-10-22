@@ -1,6 +1,18 @@
 {
     "ProfileGravatar": {
-        "GravatarHash": "GravatarHash"
+        "AvatarDescription": "Foto de perfil de Gravatar",
+        "DefaultImage": "Imagen por defecto",
+        "DefaultImageBlank": "En blanco (transparente)",
+        "DefaultImageDescription": "Imagen que muestra Gravatar cuando no hay ninguna foto de perfil asociada al hash.",
+        "DefaultImageMysteryPerson": "Persona misteriosa",
+        "GravatarHash": "Hash de Gravatar",
+        "GravatarHashSegmentHelp": "Hash SHA256 (o MD5) de la dirección de correo del visitante",
+        "Rating": "Clasificación máxima",
+        "RatingDescription": "Los usuarios de Gravatar clasifican ellos mismos sus fotos. Las fotos con una clasificación superior a este nivel se sustituyen por la imagen por defecto. G es apta para todos los públicos.",
+        "ShowInVisitsLog": "Mostrar la foto de Gravatar en el registro de visitas",
+        "ShowInVisitsLogDescription": "Muestra una pequeña foto de perfil junto a los detalles del visitante en las visitas con un hash de Gravatar conocido.",
+        "TagManagerGravatarHashTitle": "Hash de Gravatar",
+        "TagManagerGravatarHashDescription": "Hash SHA256 de la dirección de correo del visitante, proporcionado por su sitio web (por ejemplo una variable de capa de datos como {{sha256_email_address}}). No use nunca la dirección de correo directamente. Muestra la foto de Gravatar del visitante en Matomo (complemento ProfileGravatar)."
     },
     "OpenmostCommunication": {
         "Dismiss": "Descartar",

@@ -1,6 +1,18 @@
 {
     "ProfileGravatar": {
-        "GravatarHash": "GravatarHash"
+        "AvatarDescription": "Gravatar-Profilbild",
+        "DefaultImage": "Standardbild",
+        "DefaultImageBlank": "Leer (transparent)",
+        "DefaultImageDescription": "Bild, das Gravatar anzeigt, wenn dem Hash kein Profilbild zugeordnet ist.",
+        "DefaultImageMysteryPerson": "Unbekannte Person",
+        "GravatarHash": "Gravatar-Hash",
+        "GravatarHashSegmentHelp": "SHA256- (oder MD5-)Hash der E-Mail-Adresse des Besuchers",
+        "Rating": "Maximale Einstufung",
+        "RatingDescription": "Gravatar-Nutzer stufen ihre Bilder selbst ein. Bilder mit einer höheren Einstufung werden durch das Standardbild ersetzt. G ist für alle Zielgruppen geeignet.",
+        "ShowInVisitsLog": "Gravatar-Bild im Besucher-Protokoll anzeigen",
+        "ShowInVisitsLogDescription": "Zeigt bei Besuchen mit bekanntem Gravatar-Hash ein kleines Profilbild neben den Besucherdetails an.",
+        "TagManagerGravatarHashTitle": "Gravatar-Hash",
+        "TagManagerGravatarHashDescription": "SHA256-Hash der E-Mail-Adresse des Besuchers, bereitgestellt von Ihrer Webseite (zum Beispiel über eine Data-Layer-Variable wie {{sha256_email_address}}). Verwenden Sie niemals die E-Mail-Adresse selbst. Zeigt das Gravatar-Bild des Besuchers in Matomo an (Plugin ProfileGravatar)."
     },
     "OpenmostCommunication": {
         "Dismiss": "Ausblenden",
