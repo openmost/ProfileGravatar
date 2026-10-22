@@ -1,7 +1,7 @@
 {
     "name": "ProfileGravatar",
-    "description": "Show the Gravatar picture of your identified visitors in the visitor profile.",
-    "version": "5.0.11",
+    "description": "Show the Gravatar picture of your identified visitors in the visitor profile and the visits log.",
+    "version": "5.1.0",
     "theme": false,
     "require": {
         "matomo": ">=5.0.0,<6.0.0-b1"
@@ -26,7 +26,9 @@
         "profile",
         "user",
         "picture",
-        "photo"
+        "photo",
+        "visitor-profile",
+        "visits-log"
     ],
     "category": "integration"
 }
