@@ -1,5 +1,9 @@
 ## Changelog
 
+### v6.0.4
+
+- Fix: the "Gravatar hash" field of the Tag Manager "Matomo Configuration" variable no longer replaces the variable, it extends it. It now works together with the other plugins extending the same variable, such as Ecommerce Enhanced, whatever their loading order.
+
 ### v6.0.3
 
 - Request parameters are read with `Piwik\Request` instead of the deprecated `Common::getRequestVar`, ready for the next Matomo versions.
