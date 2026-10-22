@@ -9,7 +9,6 @@
 
 namespace Piwik\Plugins\ProfileGravatar;
 
-use Piwik\Container\StaticContainer;
 use Piwik\Plugins\ProfileGravatar\TagManager\MatomoConfigurationVariable;
 
 class ProfileGravatar extends \Piwik\Plugin
@@ -31,18 +30,11 @@ class ProfileGravatar extends \Piwik\Plugin
     }
 
     /**
-     * Replaces the core "Matomo Configuration" variable template by the one with the "Gravatar hash" field
+     * Adds the "Gravatar hash" field to the "Matomo Configuration" variable, on top of the other plugins extending it
      */
     public function filterVariables(&$variables): void
     {
-        $coreClass = \Piwik\Plugins\TagManager\Template\Variable\MatomoConfigurationVariable::class;
-
-        foreach ($variables as $index => $variable) {
-            if (get_class($variable) === $coreClass) {
-                $variables[$index] = StaticContainer::get(MatomoConfigurationVariable::class);
-                return;
-            }
-        }
+        MatomoConfigurationVariable::extendVariables($variables);
     }
 
     public function renderOpenmostCommunication(&$out, $layout, $module = '', $action = '')
